@@ -15,6 +15,21 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
+.description,
+.list,
+.area {
+  margin: 0;
+}
+
 /*Logo*/
 
 .logo {
@@ -54,6 +69,16 @@ body {
   color: var(--primary-text-color);
 }
 
+.header,
+.portfolio-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.portfolio-header {
+  margin-bottom: 93px;
+}
+
 /*Hero*/
 
 .hero-title {
@@ -63,6 +88,16 @@ body {
   text-align: center;
   letter-spacing: 0.06px;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /*Networks*/
@@ -78,6 +113,8 @@ body {
 /*Sections*/
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -87,13 +124,23 @@ body {
   letter-spacing: 0.03px;
 }
 
+.section .features,
+.section .services,
+.section .team,
+.section .clients,
+.section .projects,
+.section .buttons {
+  margin-bottom: 94px;
+}
+
 /*Lists*/
 
 .list {
   list-style: none;
 }
 
-.features .title {
+.features .title,
+.service-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -103,13 +150,26 @@ body {
   text-transform: uppercase;
 }
 
+.features .title {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.service-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .features .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03px;
 }
 
 .team .title {
+  margin-bottom: 10px;
+  margin-top: 30px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -120,6 +180,8 @@ body {
 }
 
 .team .profession {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
@@ -163,6 +225,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06px;
+  border-radius: 4px;
+  padding: 10px 34px;
+  min-width: 200px;
 }
 
 .button {
@@ -174,6 +239,9 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
 }
 
 .button:hover {
@@ -199,6 +267,11 @@ footer {
 .footer-copyright {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.footer-copyright {
+  margin-top: 0;
+  margin-bottom: 21px;
 }
 
 .footer-text,
