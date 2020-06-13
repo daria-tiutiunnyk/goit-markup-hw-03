@@ -19,25 +19,27 @@
     <!-- Header -->
     <header>
       <div class="container header">
-        <nav>
+        <nav class="nav-logo">
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span> Studio</a
           >
 
           <ul class="site-nav list">
-            <li><a href="#" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="item"><a href="#" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -117,7 +119,7 @@
       <section class="section services">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="features list">
+          <ul class="features list services-list">
             <li>
               <img
                 src="./img/box1.jpg"
@@ -150,7 +152,7 @@
       </section>
 
       <!-- Team -->
-      <section class="section team">
+      <section class="section ad-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
@@ -163,25 +165,23 @@
               />
               <h3 class="title">Николай Кучеренко</h3>
               <p class="profession">Product Designer</p>
-              <ul class="network list">
+              <ul class="network list network-flex">
                 <li>
                   <a href="#" aria-label="Ссылка на Instagram" class="link"
-                    >Instagram</a
+                    >Ins</a
                   >
                 </li>
                 <li>
-                  <a href="#" aria-label="Ссылка на Twitter" class="link"
-                    >Twitter</a
-                  >
+                  <a href="#" aria-label="Ссылка на Twitter" class="link">Tw</a>
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на Facebook" class="link"
-                    >Facebook</a
+                    >FB</a
                   >
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на LinkedIn" class="link"
-                    >LinkedIn</a
+                    >LIn</a
                   >
                 </li>
               </ul>
@@ -195,25 +195,23 @@
               />
               <h3 class="title">Ольга Иванова</h3>
               <p class="profession">Frontend Developer</p>
-              <ul class="network list">
+              <ul class="network list network-flex">
                 <li>
                   <a href="#" aria-label="Ссылка на Instagram" class="link"
-                    >Instagram</a
+                    >Ins</a
                   >
                 </li>
                 <li>
-                  <a href="#" aria-label="Ссылка на Twitter" class="link"
-                    >Twitter</a
-                  >
+                  <a href="#" aria-label="Ссылка на Twitter" class="link">Tw</a>
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на Facebook" class="link"
-                    >Facebook</a
+                    >FB</a
                   >
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на LinkedIn" class="link"
-                    >LinkedIn</a
+                    >LIn</a
                   >
                 </li>
               </ul>
@@ -227,25 +225,23 @@
               />
               <h3 class="title">Андрей Шевченко</h3>
               <p class="profession">Marketing</p>
-              <ul class="network list">
+              <ul class="network list network-flex">
                 <li>
                   <a href="#" aria-label="Ссылка на Instagram" class="link"
-                    >Instagram</a
+                    >Ins</a
                   >
                 </li>
                 <li>
-                  <a href="#" aria-label="Ссылка на Twitter" class="link"
-                    >Twitter</a
-                  >
+                  <a href="#" aria-label="Ссылка на Twitter" class="link">Tw</a>
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на Facebook" class="link"
-                    >Facebook</a
+                    >FB</a
                   >
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на LinkedIn" class="link"
-                    >LinkedIn</a
+                    >LIn</a
                   >
                 </li>
               </ul>
@@ -259,25 +255,23 @@
               />
               <h3 class="title">Иван Николаев</h3>
               <p class="profession">UI Designer</p>
-              <ul class="network list">
+              <ul class="network list network-flex">
                 <li>
                   <a href="#" aria-label="Ссылка на Instagram" class="link"
-                    >Instagram</a
+                    >Ins</a
                   >
                 </li>
                 <li>
-                  <a href="#" aria-label="Ссылка на Twitter" class="link"
-                    >Twitter</a
-                  >
+                  <a href="#" aria-label="Ссылка на Twitter" class="link">Tw</a>
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на Facebook" class="link"
-                    >Facebook</a
+                    >FB</a
                   >
                 </li>
                 <li>
                   <a href="#" aria-label="Ссылка на LinkedIn" class="link"
-                    >LinkedIn</a
+                    >LIn</a
                   >
                 </li>
               </ul>
@@ -290,7 +284,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
+          <ul class="list clients-flex">
             <li>
               <a href="#">
                 <img
@@ -358,7 +352,7 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="container footer">
         <div>
           <a href="./index.html" class="logo">
             <span class="logo-web" class="footer-bgc">Web</span>

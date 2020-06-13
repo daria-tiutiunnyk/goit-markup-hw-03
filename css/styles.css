@@ -24,12 +24,6 @@ body {
   outline: 2px solid red;
 }
 
-.description,
-.list,
-.area {
-  margin: 0;
-}
-
 /*Logo*/
 
 .logo {
@@ -56,6 +50,10 @@ body {
 
 .site-nav .link,
 .contacts-nav .link {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -65,8 +63,20 @@ body {
   text-decoration: none;
 }
 
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-nav .item + .item {
+  margin-left: 30px;
+}
+
 .contacts-nav .link {
   color: var(--primary-text-color);
+}
+
+.logo {
+  margin-right: 84px;
 }
 
 .header,
@@ -77,6 +87,22 @@ body {
 
 .portfolio-header {
   margin-bottom: 93px;
+}
+
+.site-nav,
+.contacts-nav,
+.header,
+.nav-logo,
+.portfolio-header {
+  display: flex;
+}
+
+.nav-logo {
+  align-items: baseline;
+}
+
+.contacts-nav .list {
+  margin-left: auto;
 }
 
 /*Hero*/
@@ -124,19 +150,54 @@ body {
   letter-spacing: 0.03px;
 }
 
-.section .features,
-.section .services,
-.section .team,
-.section .clients,
-.section .projects,
-.section .buttons {
+.features,
+.services,
+.ad-team,
+.clients,
+.projects {
   margin-bottom: 94px;
+}
+
+.ad-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
 }
 
 /*Lists*/
 
 .list {
   list-style: none;
+  padding-left: 0;
+}
+
+.description,
+.list,
+.area {
+  margin: 0;
+}
+
+/*.list. {
+  padding: 0;
+}*/
+
+/*Features*/
+
+.features .list {
+  display: flex;
+}
+
+.features li {
+  width: 270px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.features li:not(:last-child),
+.services-list li:not(:last-child),
+.team li:not(:last-child),
+.clients-flex li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features .title,
@@ -189,6 +250,8 @@ body {
 }
 
 .projects .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -198,6 +261,7 @@ body {
 }
 
 .projects .area {
+  margin-top: 0;
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -215,6 +279,86 @@ body {
   text-decoration: none;
 }
 
+/*Services*/
+
+.services-list {
+  display: flex;
+}
+
+.services-list li {
+  width: 370px;
+}
+
+/*Team*/
+
+.team {
+  display: flex;
+}
+
+.team li {
+  width: 270px;
+}
+
+.profession {
+  text-align: center;
+}
+
+.network-flex {
+  display: flex;
+  width: 206px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 24px;
+}
+
+.network-flex li {
+  width: 44px;
+}
+
+.network-flex li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.clients-flex {
+  display: flex;
+  margin-right: px;
+  margin-left: px;
+  margin-bottom: px;
+}
+
+.clients-flex li {
+  width: 170px;
+}
+
+/*Projects*/
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .item {
+  width: 370px;
+  margin-right: 30px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.projects .item:nth-child(3n + 1) {
+  margin-right: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects-info {
+  width: 322px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+}
+
 /* Buttons*/
 
 .main-button {
@@ -225,7 +369,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 10px 34px;
   min-width: 200px;
 }
@@ -239,7 +383,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 6px 22px;
   min-width: 73px;
 }
@@ -247,6 +391,15 @@ body {
 .button:hover {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+}
+
+.buttons-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin-bottom: 50px;
 }
 
 /*Footer*/
@@ -269,11 +422,6 @@ footer {
   text-decoration: none;
 }
 
-.footer-copyright {
-  margin-top: 0;
-  margin-bottom: 21px;
-}
-
 .footer-text,
 .logo-studio,
 .footer-sign {
@@ -285,4 +433,14 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03px;
   text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 21px;
+}
+
+.footer-copyright {
+  margin-top: 0;
+  margin-bottom: 0;
 }
