@@ -155,15 +155,17 @@ body {
 
 .features,
 .services,
-.ad-team,
-.clients,
 .ad-projects {
   margin-bottom: 94px;
 }
 
+.clients,
 .ad-team {
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.ad-team {
   background-color: var(--secondary-background-color);
 }
 
@@ -426,12 +428,15 @@ footer {
 
 .footer {
   padding-top: 40px;
-  padding-bottom: 21px;
+  padding-bottom: 28px;
 }
 
 .footer-copyright {
-  margin-top: 46px;
+  margin-top: 0;
   margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
 }
 
