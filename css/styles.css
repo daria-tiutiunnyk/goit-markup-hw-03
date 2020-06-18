@@ -402,6 +402,7 @@ footer {
 
 .footer-links,
 .footer-text {
+  font-style: normal;
   margin-bottom: 9px;
 }
 
