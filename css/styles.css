@@ -6,6 +6,7 @@
   --white-text-color: #ffffff;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -338,10 +339,18 @@ body {
 }
 
 .projects-info {
-  width: 322px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
+  width: 370px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-right: 1px solid var(--border-colour);
+  border-left: 1px solid var(--border-colour);
+  border-bottom: 1px solid var(--border-colour);
+}
+
+.project-image {
+  display: block;
 }
 
 /* Buttons*/
