@@ -88,6 +88,10 @@ body {
   margin-bottom: 93px;
 }*/
 
+.header-border {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .main-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -344,9 +348,9 @@ body {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-right: 1px solid var(--border-colour);
-  border-left: 1px solid var(--border-colour);
-  border-bottom: 1px solid var(--border-colour);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .project-image {
