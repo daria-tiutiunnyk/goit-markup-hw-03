@@ -134,7 +134,6 @@ body {
 
 .hero {
   text-align: center;
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -163,13 +162,13 @@ body {
   letter-spacing: 0.03px;
 }
 
-.features,
-.services,
+.features
 /*.ad-projects*/ {
-  margin-bottom: 94px;
+  margin-top: 94px;
 }
 
 .clients,
+.services,
 .ad-team {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -222,6 +221,7 @@ body {
 .features .title {
   margin-bottom: 10px;
 }
+
 .service-title {
   margin-bottom: 0;
 }
